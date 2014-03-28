@@ -1,0 +1,23 @@
+{
+	"name": "QR Relay",
+	"version": "1.8.3",
+	"description": "Relay your currently viewed page to your smartphone",
+	"icons": {
+		"16": "16.png",
+		"48": "48.png",
+		"128": "128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "19.png",
+			"38": "38.png"
+		},
+		"default_title": "QR Relay",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"tabs",
+		"https://*.googleapis.com/*"
+	],
+	"manifest_version": 2
+}

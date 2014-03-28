@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="css/ui-darkness/jquery-ui.min.css" rel="stylesheet"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/popup.js"></script>
+		<style>
+			body {
+				text-align: center;
+				font: message-box;
+				font-size: 62.5%;
+				margin: 0;
+				padding: 0;
+				-webkit-user-select: none;
+			}
+			body:hover #options {
+				margin-bottom: 0;
+			}
+			#qrCode {
+				background: url(loading-spinning-bubbles.svg) center no-repeat ;
+				transition: width 500ms, height 500ms, background-image 500ms ease-in-out;
+			}
+			#options {
+				background: rgba(0, 0, 0, 0.8);
+				border-radius: 0 0 3px 3px;
+				position: absolute;
+				bottom: 0;
+				margin-bottom: -22px;
+				transition: margin-bottom 250ms ease-in-out;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="qrCode"></div>
+		<div id="options">
+			<span id="size">
+				<input type="radio" name="size" id="s" value="200"/><label for="s" title="Small">S</label>
+				<input type="radio" name="size" id="m" value="300"/><label for="m" title="Medium">M</label>
+				<input type="radio" name="size" id="l" value="400"/><label for="l" title="Large">L</label>
+				<input type="radio" name="size" id="xl" value="500"/><label for="xl" title="Extra Large">XL</label>
+				<input type="checkbox" id="short"/><label for="short" title="Shorten URL">Shorten URL</label>
+		</div>
+	</body>
+</html>
