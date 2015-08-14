@@ -1,6 +1,6 @@
 {
 	"name": "QR Relay",
-	"version": "1.8.3",
+	"version": "1.8.4",
 	"description": "Relay your currently viewed page to your smartphone",
 	"icons": {
 		"16": "16.png",
